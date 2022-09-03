@@ -2,10 +2,6 @@ public class areaAndPerimeter {
     /**
      * @param args
      */
-
-    public void name() {
-        System.out.println("hello world!");
-    }
     public static void main(String[] args) {
         int length = 5;
         int breath = 7;
