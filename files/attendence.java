@@ -26,9 +26,12 @@ public class attendence {
             if (yn == 'y') {
             System.out.println("Your allowed to sit in examination because of medical cause");}
 
-            else {    
-            System.out.println("You don't have any medical cause. Your not allowed to sit in examination due to less attendence");}}
+            else if (yn == 'n') {    
+            System.out.println("You don't have any medical cause. Your not allowed to sit in examination due to less attendence");}
             
+            else {
+                System.out.println("invalid input");}}
+                
         input.close();    
 
     }
