@@ -6,7 +6,7 @@ public class diamondNo {
 
         System.out.print("Enter no. of rows: ");
         int n = s.nextInt();
-
+ 
         for (int i = 0; i <= n; i++) {
             for (int j = (n - i); j >= 1; j--) {
                 System.out.print(" ");
