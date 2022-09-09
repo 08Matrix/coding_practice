@@ -9,7 +9,7 @@ public class HCFandLCM {
         System.out.print("Enter the first number: ");
         float n = s.nextFloat();
 
-        System.out.print("Enter the first number: ");
+        System.out.print("Enter the second number: ");
         float m = s.nextFloat();
 
         if (m <= 0 || n <= 0) {
