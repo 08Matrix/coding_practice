@@ -12,22 +12,28 @@ public class HCFandLCM {
         System.out.print("Enter the first number: ");
         float m = s.nextFloat();
 
-        float product = n * m;
-
-        lcm = (n > m) ? n : m;
-        
-        while(lcm <= product) {
-            if (lcm % n == 0 && lcm % m == 0) {
-                
-                System.out.println("the LCM is " + lcm);
-                
-                b = product / lcm;
-                System.out.println("the HCF is " + b);
-                
-                break;
-            }
-            lcm++;
+        if (m <= 0 || n <= 0) {
+            System.out.println("Input cannot be 0 or negative");
         }
+        else {
+
+            float product = n * m;
+
+            lcm = (n > m) ? n : m;
+        
+            while(lcm <= product) {
+                if (lcm % n == 0 && lcm % m == 0) {
+                
+                    System.out.println("the LCM is " + lcm);
+                
+                    b = product / lcm;
+                    System.out.println("the HCF is " + b);
+                
+                    break;
+                }
+                lcm++;
+            }
+        }    
         s.close();
     }
 }
