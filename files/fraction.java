@@ -37,7 +37,7 @@ public class fraction {
                 }
             }
             else {
-                System.out.println("The fraction in lowest terms is: 0/0");
+                System.out.println("The fraction in lowest terms is: 1/1");
             }
         }
         s.close();
