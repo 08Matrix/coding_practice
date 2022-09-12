@@ -9,6 +9,8 @@ public class primeFactor {
         
         int i, j, t;
 
+        System.out.println("The prime factors of " + n + " are: ");
+
         for (i = 1; i <= n; i++) {
             t = 0;
             for (j = 2; j < i; j++) {
@@ -19,7 +21,7 @@ public class primeFactor {
             }
             if (t == 0) {
                 if (n % i == 0 && i > 1) {
-                    System.out.println(i + " is a prime factor of " + n);
+                    System.out.print(i + ", ");
                 }
             }
         }
