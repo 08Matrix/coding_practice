@@ -19,30 +19,22 @@ public class smallToLarge {
         }
 
         //Declaring the variables.
-        int sm = arr [0], lr = arr [0], j = 0, k = 0;
+        int sm = arr [0], lr = arr [0];
 
         //Finding the smallest element in the array.
         for (int i = 1; i < arr.length; i++) {
             if (arr [i] < sm) {
-                j = arr [i];
+                sm = arr [i];
             }
-        }
-
-        //Printing the smallest element of the array.
-        System.out.print("The smallest element of the array is: " + j);
-        s.close();
-
-        System.out.println(" ");
-
-        //Finding the largest element in the array.
-        for (int i = 1; i < arr.length; i++) {
             if (arr [i] > lr) {
-                k = arr [i];
+                lr = arr [i];
             }
         }
 
-        //Printing the largest element of the array.
-        System.out.print("The largest element of the array is: " + k);
+        //Printing the smallest and largest elements of the array.
+        System.out.print("The smallest element of the array is: " + sm);
+        System.out.println(" ");
+        System.out.print("The largest element of the array is: " + lr);
         s.close();
 
     }
